@@ -26,4 +26,3 @@ RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/releases/download/2.3.8/SABnz
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 COPY root/ /
-
