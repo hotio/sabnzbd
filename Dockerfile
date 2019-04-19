@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND="noninteractive"
 
 ENV APP="SABnzbd"
 EXPOSE 8080
-HEALTHCHECK --interval=60s CMD curl -fsSL http://localhost:8080 || exit 1
+HEALTHCHECK --interval=60s CMD curl -fsSL http://localhost:8080/sabnzbd/api || exit 1
 
 # install packages
 RUN apt update && \
