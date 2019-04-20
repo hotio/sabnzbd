@@ -1,5 +1,9 @@
 # [SABnzbd](https://github.com/sabnzbd/sabnzbd)
 
+[![badge](https://images.microbadger.com/badges/image/hotio/sabnzbd.svg)](https://microbadger.com/images/hotio/sabnzbd "Get your own image badge on microbadger.com")
+[![badge](https://images.microbadger.com/badges/version/hotio/sabnzbd.svg)](https://microbadger.com/images/hotio/sabnzbd "Get your own version badge on microbadger.com")
+[![badge](https://images.microbadger.com/badges/commit/hotio/sabnzbd.svg)](https://microbadger.com/images/hotio/sabnzbd "Get your own commit badge on microbadger.com")
+
 ## Donations
 
 NANO: `xrb_1bxqm6nsm55s64rgf8f5k9m795hda535to6y15ik496goatakpupjfqzokfc`  
