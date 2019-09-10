@@ -1,8 +1,7 @@
-# [SABnzbd](https://github.com/sabnzbd/sabnzbd)
+# [docker-sabnzbd](https://github.com/hotio/docker-sabnzbd)
 
-[![badge](https://images.microbadger.com/badges/image/hotio/sabnzbd.svg)](https://microbadger.com/images/hotio/sabnzbd "Get your own image badge on microbadger.com")
-[![badge](https://images.microbadger.com/badges/version/hotio/sabnzbd.svg)](https://microbadger.com/images/hotio/sabnzbd "Get your own version badge on microbadger.com")
-[![badge](https://images.microbadger.com/badges/commit/hotio/sabnzbd.svg)](https://microbadger.com/images/hotio/sabnzbd "Get your own commit badge on microbadger.com")
+![Docker Pulls](https://img.shields.io/docker/pulls/hotio/sabnzbd?style=flat-square)
+![Drone (cloud)](https://img.shields.io/drone/build/hotio/docker-sabnzbd?style=flat-square)
 
 ## Donations
 
