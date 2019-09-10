@@ -1,11 +1,7 @@
 FROM hotio/base
 
 ARG DEBIAN_FRONTEND="noninteractive"
-ARG COMMIT
-ARG TAG
 
-ENV COMMIT="${COMMIT}" TAG="${TAG}"
-ENV APP="SABnzbd"
 EXPOSE 8080
 HEALTHCHECK --interval=60s CMD curl -fsSL http://localhost:8080 || exit 1
 
@@ -29,3 +25,9 @@ RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/releases/download/2.3.9/SABnz
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 COPY root/ /
+
+ARG COMMIT
+ARG TAG
+ARG APP
+
+ENV COMMIT="${COMMIT}" TAG="${TAG}" APP="${APP}"
