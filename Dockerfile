@@ -26,8 +26,5 @@ RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/releases/download/2.3.9/SABnz
 
 COPY root/ /
 
-ARG COMMIT
 ARG TAG
-ARG APP
-
-ENV COMMIT="${COMMIT}" TAG="${TAG}" APP="${APP}"
+ENV TAG="${TAG}"
