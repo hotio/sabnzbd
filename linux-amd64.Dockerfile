@@ -19,12 +19,9 @@ RUN apt update && \
     apt clean && \
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
-# install app
-# https://github.com/sabnzbd/sabnzbd/releases
-RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/releases/download/2.3.9/SABnzbd-2.3.9-src.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
-    chmod -R u=rwX,go=rX "${APP_DIR}"
-
 COPY root/ /
 
-ARG TAG
-ENV TAG="${TAG}"
+# install app
+RUN version=$(sed -n '1p' /versions/sabnzbd) && \
+    curl -fsSL "https://github.com/sabnzbd/sabnzbd/releases/download/${version}/SABnzbd-${version}-src.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
+    chmod -R u=rwX,go=rX "${APP_DIR}"
