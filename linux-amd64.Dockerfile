@@ -22,7 +22,9 @@ RUN apt update && \
 
 COPY root/ /
 
+# https://github.com/sabnzbd/sabnzbd/releases
+ENV SABNZBD_VERSION=2.3.9
+
 # install app
-RUN version=$(sed -n '1p' /versions/sabnzbd) && \
-    curl -fsSL "https://github.com/sabnzbd/sabnzbd/releases/download/${version}/SABnzbd-${version}-src.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
+RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/releases/download/${SABNZBD_VERSION}/SABnzbd-${SABNZBD_VERSION}-src.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
     chmod -R u=rwX,go=rX "${APP_DIR}"
