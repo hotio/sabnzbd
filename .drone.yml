@@ -65,7 +65,7 @@ steps:
   pull: always
   commands:
     - sleep 60
-    - curl -fsSL service:8080
+    - curl -fsSL service:8080/sabnzbd/api
 
 services:
 - name: service
@@ -126,7 +126,7 @@ steps:
   pull: always
   commands:
     - sleep 60
-    - curl -fsSL service:8080
+    - curl -fsSL service:8080/sabnzbd/api
 
 services:
 - name: service
@@ -187,7 +187,7 @@ steps:
   pull: always
   commands:
     - sleep 60
-    - curl -fsSL service:8080
+    - curl -fsSL service:8080/sabnzbd/api
 
 services:
 - name: service
