@@ -324,7 +324,7 @@ steps:
   pull: always
   user: root
   commands:
-    - apk add --no-cache curl@edge dig@edge sed@edge
+    - apk add --no-cache curl@edge bind-tools@edge sed@edge
     - sleep 50
     - ip=$(dig +short service) && sed -i s/service/${ip}/g puppeteer.js
     - mv puppeteer.js /usr/src/app/src/puppeteer.js && cd /usr/src/app && node src/puppeteer.js
