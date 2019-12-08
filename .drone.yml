@@ -333,7 +333,7 @@ services:
 - name: service
   image: ${DRONE_REPO_OWNER}/${DRONE_REPO_NAME##docker-}:${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA:0:7}-${DRONE_BUILD_NUMBER}-${DRONE_STAGE_OS}-${DRONE_STAGE_ARCH}
   pull: always
-  command: [ "--hostname=service" ]
+  hostname: service
 
 depends_on:
   - linux-amd64-test
