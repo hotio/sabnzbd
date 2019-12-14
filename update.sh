@@ -19,11 +19,11 @@ const puppeteer = require('puppeteer');
     ]
   });
   const page = await browser.newPage();
-  await page.setViewport({ width: 1920, height: 1080, isLandscape: true });
+  await page.setViewport({ width: 1920, height: 1080 });
   await page.goto("${SERVICE_IP}", { waitUntil: "networkidle${NETWORK_IDLE}" });
   await page.evaluate(() => {
     const div = document.createElement('div');
-    div.innerHTML = '<span style="font-weight: bold !important;">${DRONE_REPO_OWNER}/${DRONE_REPO_NAME##docker-}:${DRONE_COMMIT_BRANCH}</span><br><br>Commit: ${DRONE_COMMIT_SHA:0:7}<br>Build: #${DRONE_BUILD_NUMBER}<br>Timestamp: $(date -u --iso-8601=seconds)';
+    div.innerHTML = '<b>${DRONE_REPO_OWNER}/${DRONE_REPO_NAME##docker-}:${DRONE_COMMIT_BRANCH}</b><br><br>Commit: ${DRONE_COMMIT_SHA:0:7}<br>Build: #${DRONE_BUILD_NUMBER}<br>Timestamp: $(date -u --iso-8601=seconds)';
     div.style.cssText = "all: initial !important; border-radius: 4px !important; font-weight: normal !important; font-size: normal !important; font-family: monospace !important; padding: 10px !important; color: black !important; position: fixed !important; bottom: 10px !important; right: 10px !important; background-color: #e7f3fe !important; border-left: 6px solid #2196F3 !important; z-index: 10000 !important";
     document.body.appendChild(div);
   });
