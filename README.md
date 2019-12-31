@@ -9,7 +9,7 @@
 Just the basics to get the container running:
 
 ```shell
-docker run --rm --name sabnzbd -p 8080:8080 -v /tmp/sabnzbd:/config hotio/sabnzbd
+docker run --rm --name sabnzbd -p 8080:8080 -v /<host_folder_config>:/config hotio/sabnzbd
 ```
 
 The environment variables below are all optional, the values you see are the defaults.
