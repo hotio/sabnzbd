@@ -11,7 +11,7 @@ RUN apt update && \
     add-apt-repository ppa:jcfp/sab-addons && \
     apt update && \
     apt install -y --no-install-recommends --no-install-suggests \
-        python python-cheetah python-sabyenc python-cryptography par2-tbb p7zip-full && \
+        python python-cheetah python-sabyenc python-cryptography par2-tbb && \
 # clean up
     apt purge -y software-properties-common && \
     apt autoremove -y && \
