@@ -7,11 +7,11 @@ EXPOSE 8080
 # install packages
 RUN apt update && \
     apt install -y --no-install-recommends --no-install-suggests \
-        python3-pip python3-setuptools build-essential python3-all-dev libffi-dev && \
+        python3-pip python3-setuptools build-essential python3-all-dev libffi-dev libssl-dev && \
 # https://github.com/sabnzbd/sabnzbd/blob/develop/requirements.txt
     pip3 install --no-cache-dir --upgrade six sabyenc3 cheetah3 cryptography feedparser configobj cherrypy portend chardet gntp && \
 # clean up
-    apt purge -y python3-pip python3-setuptools build-essential python3-all-dev libffi-dev && \
+    apt purge -y python3-pip python3-setuptools build-essential python3-all-dev libffi-dev libssl-dev && \
     apt autoremove -y && \
     apt clean && \
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
