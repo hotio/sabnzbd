@@ -25,7 +25,7 @@ ARG SABNZBD_VERSION=17719b1b5bfec074ec30bb633eb956d2a27c2d6c
 
 # install app
 RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/archive/${SABNZBD_VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
-    python3 /app/tools/make_mo.py && \
+    cd "${APP_DIR}" && python3 tools/make_mo.py && \
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 COPY root/ /
