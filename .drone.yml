@@ -308,6 +308,7 @@ steps:
     - apk add --no-cache curl@edge iputils@edge bash@edge coreutils@edge
     - bash update.sh checkservice
     - bash update.sh screenshot
+  failure: ignore
 
 - name: discord
   image: ${DRONE_REPO_OWNER}/base
