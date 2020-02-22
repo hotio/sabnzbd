@@ -1,5 +1,7 @@
 # sabnzbd
 
+![Logo](https://raw.githubusercontent.com/hotio/unraid-templates/master/hotio/img/sabnzbd.png)  
+
 [![GitHub](https://img.shields.io/badge/source-github-lightgrey)](https://github.com/hotio/docker-sabnzbd)
 [![Docker Pulls](https://img.shields.io/docker/pulls/hotio/sabnzbd)](https://hub.docker.com/r/hotio/sabnzbd)
 [![Discord](https://img.shields.io/discord/610068305893523457?color=738ad6&label=discord&logo=discord&logoColor=white)](https://discord.gg/3SnkuKp)
