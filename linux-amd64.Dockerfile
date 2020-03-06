@@ -21,7 +21,7 @@ RUN apt update && \
     apt clean && \
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
-ARG SABNZBD_VERSION=d1e2986510784bbf87c7ab4223f5cf6b1a10a507
+ARG SABNZBD_VERSION=07d0731a5e467e5fa8f89fee9266dcdb414e3439
 
 # install app
 RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/archive/${SABNZBD_VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
