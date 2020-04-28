@@ -14,7 +14,7 @@ RUN apt update && \
         par2-tbb \
         python3-pip python3-setuptools && \
 # https://github.com/sabnzbd/sabnzbd/blob/develop/requirements.txt
-    pip3 install --no-cache-dir --upgrade six sabyenc3 cheetah3 cryptography feedparser configobj cherrypy portend chardet gntp && \
+    pip3 install --no-cache-dir --upgrade six sabyenc3 cheetah3 cryptography feedparser configobj cherrypy portend chardet notify2 && \
 # clean up
     apt purge -y software-properties-common python3-pip python3-setuptools && \
     apt autoremove -y && \
