@@ -11,9 +11,12 @@ RUN apt update && \
     add-apt-repository ppa:jcfp/sab-addons && \
     apt update && \
     apt install -y --no-install-recommends --no-install-suggests \
-        python python-cheetah python-sabyenc python-cryptography par2-tbb && \
+        par2-tbb \
+        python3-pip python3-setuptools build-essential python3-all-dev libffi-dev libssl-dev && \
+# https://github.com/sabnzbd/sabnzbd/blob/develop/requirements.txt
+    pip3 install --no-cache-dir --upgrade six sabyenc3 cheetah3 cryptography feedparser configobj cherrypy portend chardet gntp && \
 # clean up
-    apt purge -y software-properties-common && \
+    apt purge -y software-properties-common python3-pip python3-setuptools build-essential python3-all-dev libffi-dev libssl-dev && \
     apt autoremove -y && \
     apt clean && \
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
