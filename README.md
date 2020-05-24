@@ -1,6 +1,6 @@
 # sabnzbd
 
-<img src="https://raw.githubusercontent.com/hotio/unraid-templates/master/hotio/img/sabnzbd.png" alt="Logo" height="130" width="130">
+<img src="https://raw.githubusercontent.com/hotio/docker-sabnzbd/master/img/sabnzbd.png" alt="Logo" height="130" width="130">
 
 [![GitHub](https://img.shields.io/badge/source-github-lightgrey)](https://github.com/hotio/docker-sabnzbd)
 [![Docker Pulls](https://img.shields.io/docker/pulls/hotio/sabnzbd)](https://hub.docker.com/r/hotio/sabnzbd)
