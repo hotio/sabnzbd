@@ -1,7 +1,7 @@
 FROM hotio/base@sha256:dba94df91a2c476ec1e3717a2f76fd01ef5b9fcf1a1baa0efbac5e3c5b5f77d4
 EXPOSE 8080
 
-RUN apk add --no-cache python3 py3-six py3-cryptography && \
+RUN apk add --no-cache python3 py3-six py3-cryptography py3-chardet && \
     apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing par2cmdline && \
     apk add --no-cache --virtual=build-dependencies py3-pip py3-setuptools gcc && \
     pip3 install --no-cache-dir --upgrade \
@@ -11,7 +11,6 @@ RUN apk add --no-cache python3 py3-six py3-cryptography && \
         configobj \
         cherrypy \
         portend \
-        chardet \
         notify2 && \
     apk del --purge build-dependencies
 
