@@ -1,29 +1,21 @@
-FROM hotio/base@sha256:18fdbba196e1c6efd5c91588dbefb5223298c4ba48b3deb7a969ff38990ff366
-
-ARG DEBIAN_FRONTEND="noninteractive"
-
+FROM hotio/base@sha256:ad79f26c53e2c7e1ed36dba0a0686990c503835134c63d9ed5aa7951e1b45c23
 EXPOSE 8080
 
-# install packages
-RUN apt update && \
-    apt install -y --no-install-recommends --no-install-suggests \
-        software-properties-common && \
-    add-apt-repository ppa:jcfp/sab-addons && \
-    apt update && \
-    apt install -y --no-install-recommends --no-install-suggests \
-        par2-tbb \
-        python3-pip python3-setuptools && \
-# https://github.com/sabnzbd/sabnzbd/blob/develop/requirements.txt
-    pip3 install --no-cache-dir --upgrade six sabyenc3 cheetah3 cryptography feedparser configobj cherrypy portend chardet notify2 && \
-# clean up
-    apt purge -y software-properties-common python3-pip python3-setuptools && \
-    apt autoremove -y && \
-    apt clean && \
-    rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
+RUN apk add --no-cache python3 py3-six par2cmdline && \
+    apk add --no-cache --virtual=build-dependencies py3-pip py3-setuptools && \
+    pip3 install --no-cache-dir --upgrade \
+        sabyenc3 \
+        cheetah3 \
+        cryptography \
+        feedparser \
+        configobj \
+        cherrypy \
+        portend \
+        chardet \
+        notify2 && \
+    apk del --purge build-dependencies
 
 ARG SABNZBD_VERSION
-
-# install app
 RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/archive/${SABNZBD_VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
     cd "${APP_DIR}" && python3 tools/make_mo.py && \
     chmod -R u=rwX,go=rX "${APP_DIR}"
