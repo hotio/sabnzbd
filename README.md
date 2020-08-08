@@ -29,12 +29,12 @@ The environment variables below are all optional, the values you see are the def
 
 ## Tags
 
-| Tag      | Description                      | Build Status                                                                                                                                              | Last Updated                                                                                                                                                        |
-| ---------|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| latest   | The same as `stable`             |                                                                                                                                                           |                                                                                                                                                                     |
-| stable   | Stable version                   | [![Build Status](https://cloud.drone.io/api/badges/hotio/docker-sabnzbd/status.svg?ref=refs/heads/stable)](https://cloud.drone.io/hotio/docker-sabnzbd)   | [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/hotio/docker-sabnzbd/stable)](https://github.com/hotio/docker-sabnzbd/commits/stable)     |
-| unstable | Unstable version, pre-releases   | [![Build Status](https://cloud.drone.io/api/badges/hotio/docker-sabnzbd/status.svg?ref=refs/heads/unstable)](https://cloud.drone.io/hotio/docker-sabnzbd) | [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/hotio/docker-sabnzbd/unstable)](https://github.com/hotio/docker-sabnzbd/commits/unstable) |
-| nightly  | Every commit from develop branch | [![Build Status](https://cloud.drone.io/api/badges/hotio/docker-sabnzbd/status.svg?ref=refs/heads/nightly)](https://cloud.drone.io/hotio/docker-sabnzbd)  | [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/hotio/docker-sabnzbd/nightly)](https://github.com/hotio/docker-sabnzbd/commits/nightly)   |
+| Tag      | Description                      |
+| ---------|----------------------------------|
+| latest   | The same as `stable`             |
+| stable   | Stable version                   |
+| unstable | Unstable version, pre-releases   |
+| nightly  | Every commit from develop branch |
 
 You can also find tags that reference a commit or version number.
 
