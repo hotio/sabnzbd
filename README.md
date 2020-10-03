@@ -13,20 +13,21 @@
 
 Just the basics to get the container running:
 
-```shell
-docker run --rm --name sabnzbd -p 8080:8080 -v /<host_folder_config>:/config hotio/sabnzbd
+```shell hl_lines="4 5 6 7 8 9"
+docker run --rm \
+    --name sabnzbd \
+    -p 8080:8080 \
+    -e PUID=1000 \
+    -e PGID=1000 \
+    -e UMASK=002 \
+    -e TZ="Etc/UTC" \
+    -e ARGS="" \
+    -e DEBUG="no" \
+    -v /<host_folder_config>:/config \
+    hotio/sabnzbd
 ```
 
-The environment variables below are all optional, the values you see are the defaults.
-
-```shell
--e PUID=1000
--e PGID=1000
--e UMASK=002
--e TZ="Etc/UTC"
--e ARGS=""
--e DEBUG="no"
-```
+The [highlighted](https://hotio.dev/containers/sabnzbd) variables are all optional, the values you see are the defaults. In most cases you'll need to add an additional volume (`-v`) or more, depending on your own personal preference, to get access to additional files.
 
 ## Tags
 
