@@ -1,5 +1,3 @@
-# sabnzbd
-
 [<img src="https://hotio.dev/img/sabnzbd.png" alt="logo" height="130" width="130">](https://github.com/sabnzbd/sabnzbd)
 
 ![Base](https://img.shields.io/badge/base-alpine-blue)
