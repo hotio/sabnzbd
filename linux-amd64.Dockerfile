@@ -1,4 +1,4 @@
-FROM hotio/base@sha256:be2a1d4b57f9eaa3579e08f03d748f1a67a099a6dea3101eb170ebd57e5ce096
+FROM hotio/base@sha256:00a1fae6f0857fff9fd9489c5a6842c25f35ce2233ea1e1d2073b3ab4ad0b76c
 EXPOSE 8080
 
 RUN apk add --no-cache unrar p7zip python3 py3-six py3-cryptography py3-chardet py3-feedparser py3-configobj py3-openssl && \
