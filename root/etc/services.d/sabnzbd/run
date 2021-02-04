@@ -3,13 +3,5 @@
 
 umask "${UMASK}"
 
-redirect_cmd() {
-    if [[ "${DEBUG}" == "yes" ]]; then
-        "$@"
-    else
-        "$@" > /dev/null 2>&1
-    fi
-}
-
 # shellcheck disable=SC2086
-redirect_cmd exec s6-setuidgid hotio python3 "${APP_DIR}/SABnzbd.py" --browser 0 --server 0.0.0.0:8080 --config-file "${CONFIG_DIR}/app/sabnzbd.ini" ${ARGS}
+exec s6-setuidgid hotio python3 "${APP_DIR}/SABnzbd.py" --browser 0 --server 0.0.0.0:8080 --config-file "${CONFIG_DIR}/app/sabnzbd.ini" ${ARGS}
