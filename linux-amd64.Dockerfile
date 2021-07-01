@@ -5,6 +5,7 @@ RUN apk add --no-cache unrar p7zip python3 py3-six py3-cryptography py3-chardet 
     apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing par2cmdline && \
     apk add --no-cache --virtual=build-dependencies py3-pip py3-setuptools gcc python3-dev musl-dev && \
     pip3 install --no-cache-dir --upgrade \
+        guessit>=3.1.0 \
         puremagic \
         sabyenc3 \
         cheetah3 \
