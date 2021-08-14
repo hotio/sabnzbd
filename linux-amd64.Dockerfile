@@ -1,4 +1,4 @@
-FROM ghcr.io/hotio/base@sha256:b69d59459ad57185a5236471f9391817a441cbd9acfb40041bbb24322e75af44
+FROM ghcr.io/hotio/base@sha256:ed47babc8956273004c10f25d4a6a554014f666444dd48e96eff2b336f5e6294
 EXPOSE 8080
 
 RUN apk add --no-cache unrar p7zip python3 py3-six py3-cryptography py3-chardet py3-feedparser py3-configobj py3-openssl && \
