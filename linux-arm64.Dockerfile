@@ -1,7 +1,7 @@
 FROM ghcr.io/hotio/base@sha256:05ed569c200448e11b1fb72bbd9609abef36f9d64f3174a61d908a89fe44c75c
 EXPOSE 8080
 
-RUN apk add --no-cache unrar p7zip python3 py3-six py3-cryptography py3-chardet py3-feedparser py3-configobj py3-openssl && \
+RUN apk add --no-cache unrar p7zip python3 py3-six py3-cryptography py3-chardet py3-feedparser py3-configobj py3-openssl py3-pysocks && \
     apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing par2cmdline py3-guessit && \
     apk add --no-cache --virtual=build-dependencies py3-pip py3-setuptools gcc python3-dev musl-dev && \
     pip3 install --no-cache-dir --upgrade \
