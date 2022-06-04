@@ -13,7 +13,8 @@ RUN apk add --no-cache py3-pip par2cmdline && \
         openssl-dev \
         musl-dev \
         cargo \
-        python3-dev && \
+        python3-dev \
+        rust && \
     pip3 install -r "${APP_DIR}/requirements.txt" && \
     apk del --purge build-dependencies
 
