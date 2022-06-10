@@ -12,8 +12,8 @@ RUN apk add --no-cache py3-pip par2cmdline && \
         openssl-dev \
         musl-dev \
         cargo \
-        python3-dev \
-        rust && \
+        python3-dev && \
+    sed -i 's/cryptography==.*/cryptography==3.3.2/g' "${APP_DIR}/requirements.txt" && \
     pip3 install -r "${APP_DIR}/requirements.txt" && \
     apk del --purge build-dependencies
 
