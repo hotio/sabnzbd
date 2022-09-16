@@ -1,6 +1,6 @@
 {
-  "version": "9472d65af94949f11a8eb34744a1cfbb2046fd32",
-  "changelog": "https://github.com/sabnzbd/sabnzbd/compare/1b4c07f229bdbce2814c848fb4516a1262994089...9472d65af94949f11a8eb34744a1cfbb2046fd32",
+  "version": "ac6fc37c7dc7f79c99c752ede8848683ff141af7",
+  "changelog": "https://github.com/sabnzbd/sabnzbd/compare/9472d65af94949f11a8eb34744a1cfbb2046fd32...ac6fc37c7dc7f79c99c752ede8848683ff141af7",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:7fb1409bac0085160b4cd32c20e08946e2caec104da84a6d1a582bdbbef77eb1",
