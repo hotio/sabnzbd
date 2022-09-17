@@ -3,7 +3,7 @@ ARG UPSTREAM_DIGEST_ARM64
 
 FROM ${UPSTREAM_IMAGE}@${UPSTREAM_DIGEST_ARM64}
 
-EXPOSE 8080
+VOLUME ["${CONFIG_DIR}"]
 
 ARG VERSION
 RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/archive/${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
