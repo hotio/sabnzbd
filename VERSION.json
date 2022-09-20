@@ -1,4 +1,5 @@
 {
+  "description": "Every commit to develop",
   "version": "a44a1269c0c0a2ff7da3d91b37cf7cc9adb54ac8",
   "changelog": "https://github.com/sabnzbd/sabnzbd/compare/ac6fc37c7dc7f79c99c752ede8848683ff141af7...a44a1269c0c0a2ff7da3d91b37cf7cc9adb54ac8",
   "upstream_image": "cr.hotio.dev/hotio/base",
