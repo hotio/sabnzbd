@@ -1,4 +1,5 @@
 {
+  "description": "Releases",
   "version": "3.6.1",
   "changelog": "https://github.com/sabnzbd/sabnzbd/compare/3.6.0...3.6.1",
   "upstream_image": "cr.hotio.dev/hotio/base",
