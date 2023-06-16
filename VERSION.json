@@ -1,7 +1,7 @@
 {
   "description": "Pre-releases",
-  "version": "4.0.2",
-  "changelog": "https://github.com/sabnzbd/sabnzbd/compare/4.0.2RC2...4.0.2",
+  "version": "4.0.3Beta1",
+  "changelog": "https://github.com/sabnzbd/sabnzbd/compare/4.0.2...4.0.3Beta1",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:59c115de4147c4f8cbaea75b1d882c9fc34e2382cf0ea1b3342b60eb18369194",
