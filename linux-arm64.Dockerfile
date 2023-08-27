@@ -23,4 +23,3 @@ RUN apk add --no-cache py3-pip par2cmdline && \
     apk del --purge build-dependencies
 
 COPY root/ /
-RUN chmod -R +x /etc/cont-init.d/ /etc/services.d/
