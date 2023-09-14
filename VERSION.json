@@ -7,5 +7,6 @@
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:15d3c6c0bb56f67e651612f21d335e0b0faed3b1bfd88f2c96758ef1d390138a",
   "upstream_digest_arm64": "sha256:b8a0c3237dc3076da51186cffd54d4bdd3f4803fdf25d6d84013059c55c635d3",
-  "test_url": "http://localhost:8080"
+  "test_url": "http://localhost:8080",
+  "par2turbo_version": "1.1.0"
 }
