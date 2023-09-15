@@ -26,12 +26,6 @@ VOLUME ["${CONFIG_DIR}"]
 
 COPY --from=builder /usr/local/bin/par2* /usr/local/bin/
 
-RUN mv /usr/local/bin/par2 /usr/local/bin/par2-turbo && \
-    echo '#!/bin/bash' > /usr/local/bin/par2 && \
-    echo '/usr/local/bin/par2-turbo "$@"' >> /usr/local/bin/par2 && \
-    echo 'echo "par2cmdline-turbo"' >> /usr/local/bin/par2 && \
-    chmod +x /usr/local/bin/par2
-
 ARG VERSION
 RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/archive/${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
     cd "${APP_DIR}" && python3 tools/make_mo.py && \
