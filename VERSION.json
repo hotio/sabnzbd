@@ -1,11 +1,11 @@
 {
   "description": "Pre-releases",
-  "version": "4.2.0Alpha2",
-  "changelog": "https://github.com/sabnzbd/sabnzbd/compare/null...4.2.0Alpha2",
+  "version": "null",
+  "changelog": "https://github.com/sabnzbd/sabnzbd/compare/4.2.0Alpha2...null",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:7eb56465879803137e0557977e6d983abb8131a77a6b57efdb24985166aee037",
   "upstream_digest_arm64": "sha256:1d7f6a125200016ebb029ca7038b5c6a2ef659bf38daa788cc6d1e339b999c36",
   "test_url": "http://localhost:8080",
-  "par2turbo_version": "1.1.0"
+  "par2turbo_version": "null"
 }
