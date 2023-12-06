@@ -1,7 +1,7 @@
 {
   "description": "Every commit to develop",
-  "version": "58facc25123dd12c769a97daa16a9b274f142f62",
-  "changelog": "https://github.com/sabnzbd/sabnzbd/compare/1e89a0af566bfe20aa726bc3bf5b26f465f311df...58facc25123dd12c769a97daa16a9b274f142f62",
+  "version": "8fb3368601c84f4d5cd48d2bd4d1c6575e7c3e14",
+  "changelog": "https://github.com/sabnzbd/sabnzbd/compare/58facc25123dd12c769a97daa16a9b274f142f62...8fb3368601c84f4d5cd48d2bd4d1c6575e7c3e14",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:f1b248466c452da319278e86d8d69f53aea51243a067678a6d3796863cbb7a5e",
