@@ -7,5 +7,5 @@
   "upstream_digest_amd64": "sha256:aba1ad70d73a01a04940ceefcc0506c8867aa99be1e1598f7f57d79dc462ba1d",
   "upstream_digest_arm64": "sha256:5f44dcee2c34486af761dca45b1a7b57ef953ee485050544c2255c6f21ed0278",
   "test_url": "http://localhost:8080",
-  "par2turbo_version": "1.1.0"
+  "par2turbo_version": "1.1.1"
 }
