@@ -26,6 +26,11 @@ VOLUME ["${CONFIG_DIR}"]
 
 COPY --from=builder /usr/local/bin/par2* /usr/local/bin/
 
+ARG NZBNOTIFY_VERSION
+RUN mkdir "${APP_DIR}-scripts" && \
+    curl -fsSL "https://github.com/caronc/nzb-notify/archive/refs/tags/v${NZBNOTIFY_VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}-scripts" --strip-components=1 && \
+    chmod -R u=rwX,go=rX "${APP_DIR}-scripts"
+
 ARG VERSION
 RUN curl -fsSL "https://github.com/sabnzbd/sabnzbd/archive/${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
     cd "${APP_DIR}" && python3 tools/make_mo.py && \
@@ -42,6 +47,7 @@ RUN apk add --no-cache py3-pip && \
         rust && \
     pip3 install --upgrade pip && \
     pip3 install -r "${APP_DIR}/requirements.txt" && \
+    pip3 install -r "${APP_DIR}-scripts/requirements.txt" && \
     apk del --purge build-dependencies
 
 COPY root/ /
