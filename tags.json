@@ -1,12 +1,12 @@
 {
   "nightly": {
     "description": "Every commit to develop",
-    "last_updated": "2024-01-15T09:13:30.585Z",
+    "last_updated": "2024-01-16T07:27:51.439Z",
     "latest": false,
     "tags": [
       "nightly",
       "nightly-aac4392f69235552c766f9256a4e0125b82e5ef7",
-      "nightly-3059e99"
+      "nightly-c975b20"
     ]
   },
   "release": {
