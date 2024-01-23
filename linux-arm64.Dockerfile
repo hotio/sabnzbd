@@ -22,7 +22,6 @@ RUN apk --update --no-cache add \
 
 FROM ${UPSTREAM_IMAGE}@${UPSTREAM_DIGEST_ARM64}
 EXPOSE 8080
-VOLUME ["${CONFIG_DIR}"]
 
 COPY --from=builder /usr/local/bin/par2* /usr/local/bin/
 
