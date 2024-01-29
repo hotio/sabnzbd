@@ -1,7 +1,7 @@
 {
   "description": "Every commit to develop",
-  "version": "bad0914e3c5bf0cd96cdc103e87a43880679143d",
-  "changelog": "https://github.com/sabnzbd/sabnzbd/compare/3faa6577dfec932a8cf0c58f891f25d43b7d0a94...bad0914e3c5bf0cd96cdc103e87a43880679143d",
+  "version": "1a698428716c8e269968981fc543701a71efee23",
+  "changelog": "https://github.com/sabnzbd/sabnzbd/compare/bad0914e3c5bf0cd96cdc103e87a43880679143d...1a698428716c8e269968981fc543701a71efee23",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
   "upstream_digest_amd64": "sha256:a55e205512f89e7851be453c57d4b580a454c0378b8cc7a91244b9b60892a988",
