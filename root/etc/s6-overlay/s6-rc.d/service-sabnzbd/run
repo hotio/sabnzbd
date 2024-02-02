@@ -4,4 +4,4 @@
 umask "${UMASK}"
 
 # shellcheck disable=SC2086
-exec s6-setuidgid hotio python3 "${APP_DIR}/SABnzbd.py" --browser 0 --server "0.0.0.0:${WEBUI_PORTS%%/*}" --config-file "${CONFIG_DIR}/sabnzbd.ini" ${ARGS}
+exec s6-setuidgid hotio python3 "${APP_DIR}/SABnzbd.py" --browser 0 --server "[::]:${WEBUI_PORTS%%/*}" --config-file "${CONFIG_DIR}/sabnzbd.ini" ${ARGS}
