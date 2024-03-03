@@ -45,9 +45,9 @@ RUN apk add --no-cache py3-pip && \
         cargo \
         python3-dev \
         rust && \
-    pip3 install --upgrade pip && \
-    pip3 install -r "${APP_DIR}/requirements.txt" && \
-    pip3 install -r "${APP_DIR}-scripts/requirements.txt" && \
+    pip3 install --break-system-packages --upgrade pip && \
+    pip3 install --break-system-packages -r "${APP_DIR}/requirements.txt" && \
+    pip3 install --break-system-packages -r "${APP_DIR}-scripts/requirements.txt" && \
     apk del --purge build-dependencies
 
 COPY root/ /
