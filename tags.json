@@ -2,13 +2,13 @@
   "nightly": {
     "description": "Every commit to develop",
     "hide": false,
-    "last_updated": "2024-03-02T20:39:26.000Z",
-    "last_updated_url": "https://github.com/hotio/sabnzbd/actions/runs/8125264542",
+    "last_updated": "2024-03-03T06:38:32.000Z",
+    "last_updated_url": "https://github.com/hotio/sabnzbd/actions/runs/8128326015",
     "latest": false,
     "tags": [
       "nightly",
       "nightly-154d2d73ef0e0d72ebf9bd7a006650015128a448",
-      "nightly-e054c8e"
+      "nightly-17e20e6"
     ]
   },
   "release": {
