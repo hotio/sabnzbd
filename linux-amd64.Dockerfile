@@ -44,8 +44,8 @@ RUN apk add --no-cache py3-pip && \
         musl-dev \
         cargo \
         python3-dev && \
-    pip3 install -r "${APP_DIR}/requirements.txt" && \
-    pip3 install -r "${APP_DIR}-scripts/requirements.txt" && \
+    pip3 install --break-system-packages -r "${APP_DIR}/requirements.txt" && \
+    pip3 install --break-system-packages -r "${APP_DIR}-scripts/requirements.txt" && \
     apk del --purge build-dependencies
 
 COPY root/ /
