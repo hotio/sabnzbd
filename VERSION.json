@@ -1,6 +1,6 @@
 {
   "description": "Every commit to develop",
-  "par2turbo_version": "1.1.1",
+  "par2turbo_version": "1.2.0",
   "test_amd64": true,
   "test_arm64": true,
   "test_url": "http://localhost:8080",
