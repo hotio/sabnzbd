@@ -14,13 +14,13 @@
   "release": {
     "description": "Releases",
     "hide": false,
-    "last_updated": "2024-12-09T21:32:53.000Z",
-    "last_updated_url": "https://github.com/hotio/sabnzbd/actions/runs/12244618674",
+    "last_updated": "2024-12-10T12:38:52.000Z",
+    "last_updated_url": "https://github.com/hotio/sabnzbd/actions/runs/12255993156",
     "latest": true,
     "tags": [
       "release",
       "release-4.4.0",
-      "release-8e08811"
+      "release-b3c87af"
     ]
   },
   "testing": {
