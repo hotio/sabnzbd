@@ -26,13 +26,13 @@
   "testing": {
     "description": "Pre-releases",
     "hide": false,
-    "last_updated": "2024-12-10T12:38:53.000Z",
-    "last_updated_url": "https://github.com/hotio/sabnzbd/actions/runs/12255994014",
+    "last_updated": "2024-12-18T13:04:53.000Z",
+    "last_updated_url": "https://github.com/hotio/sabnzbd/actions/runs/12393472050",
     "latest": false,
     "tags": [
       "testing",
-      "testing-4.4.0",
-      "testing-73330ee"
+      "testing-4.4.1RC1",
+      "testing-07d4b35"
     ]
   }
 }
