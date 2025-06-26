@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:55141814d1afb59d290bff843175d53d07161da7986c77e3955bea0e4847b532",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "7a7e7b7b9386176a46c62d639b1ec4ad950c2c35"
+  "version": "18d84fa522c06f88aac746216d2df3a89ca0445b"
 }
