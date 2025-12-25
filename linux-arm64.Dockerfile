@@ -23,7 +23,7 @@ RUN apk --update --no-cache add \
 FROM ${UPSTREAM_IMAGE}@${UPSTREAM_DIGEST_ARM64}
 EXPOSE 8080
 ARG IMAGE_STATS
-ENV IMAGE_STATS=${IMAGE_STATS} WEBUI_PORTS="8080/tcp,8080/udp"
+ENV IMAGE_STATS=${IMAGE_STATS} WEBUI_PORTS="8080/tcp"
 
 COPY --from=builder /usr/local/bin/par2* /usr/local/bin/
 
