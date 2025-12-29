@@ -42,3 +42,4 @@ RUN apk add --no-cache py3-pip && \
     apk del --purge build-dependencies
 
 COPY root/ /
+RUN find /etc/s6-overlay/s6-rc.d -name "run*" -execdir chmod +x {} +
