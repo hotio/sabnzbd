@@ -3,7 +3,7 @@ ARG UPSTREAM_TAG_SHA
 
 FROM alpine:3.18 AS builder
 
-ARG PAR2TURBO_VERSION
+ARG VERSION_PAR2TURBO
 
 RUN apk --update --no-cache add \
     curl \
@@ -11,7 +11,7 @@ RUN apk --update --no-cache add \
     automake \
     build-base \
 && mkdir /par2turbo \
-&& curl -fsSL "https://github.com/animetosho/par2cmdline-turbo/archive/refs/tags/v${PAR2TURBO_VERSION}.tar.gz" | tar xzf - -C /par2turbo --strip-components=1 \
+&& curl -fsSL "https://github.com/animetosho/par2cmdline-turbo/archive/refs/tags/v${VERSION_PAR2TURBO}.tar.gz" | tar xzf - -C /par2turbo --strip-components=1 \
 && cd /par2turbo \
 && aclocal \
 && automake --add-missing \
