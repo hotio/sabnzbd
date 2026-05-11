@@ -6,6 +6,6 @@
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
   "upstream_tag_sha": "alpinevpn-4ed63ea",
-  "version": "7abb39d02d7833cc929e1379b0be6e9bfe7d5bd7",
+  "version": "90798e5e4dcbd2e45bc0aa36f95de482e08b8cea",
   "version_par2turbo": "1.4.0"
 }
