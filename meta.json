@@ -1,7 +1,6 @@
 {
   "description": "Releases",
   "latest": true,
-  "packages_hash": "4d65b382023e7e65ed545bd675e1132601929e05",
   "test_amd64": true,
   "test_arm64": true,
   "test_url": "http://localhost:8080",
