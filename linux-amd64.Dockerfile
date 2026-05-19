@@ -1,23 +1,27 @@
+# syntax=docker/dockerfile:1
+# check=skip=InvalidDefaultArgInFrom
 ARG UPSTREAM_IMAGE
 ARG UPSTREAM_TAG_SHA
 
-FROM alpine:3.18 AS builder
+FROM alpine AS builder
 
 ARG VERSION_PAR2TURBO
-RUN apk --update --no-cache add \
-    curl \
-    autoconf \
-    automake \
-    build-base \
-&& mkdir /par2turbo \
-&& curl -fsSL "https://github.com/animetosho/par2cmdline-turbo/archive/refs/tags/v${VERSION_PAR2TURBO}.tar.gz" | tar xzf - -C /par2turbo --strip-components=1 \
-&& cd /par2turbo \
-&& aclocal \
-&& automake --add-missing \
-&& autoconf \
-&& ./configure \
-&& make \
-&& make install
+
+RUN apk add --no-cache \
+        curl \
+        autoconf \
+        automake \
+        build-base && \
+    mkdir /par2turbo && \
+    curl -fsSL "https://github.com/animetosho/par2cmdline-turbo/archive/refs/tags/v${VERSION_PAR2TURBO}.tar.gz" | tar xzf - -C /par2turbo --strip-components=1 && \
+    cd /par2turbo && \
+    aclocal && \
+    automake --add-missing && \
+    autoconf && \
+    ./configure && \
+    make && \
+    make install
+
 
 FROM ${UPSTREAM_IMAGE}:${UPSTREAM_TAG_SHA}
 EXPOSE 8080
