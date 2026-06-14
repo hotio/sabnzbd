@@ -7,7 +7,7 @@
   "upstream_tag": "alpinevpn",
   "upstream_tag_sha": "alpinevpn-f409dc1",
   "upstream_tag_sha__command": "json=$(cat meta.json) && upstream_image=$(jq -re '.upstream_image' <<< \"${json}\") && upstream_image_base=$(basename \"${upstream_image}\") && upstream_tag=$(jq -re '.upstream_tag' <<< \"${json}\") && tags_json=$(curl -fsSL ${GITHUB_TOKEN:+--header \"Authorization: Bearer ${GITHUB_TOKEN}\"} \"https://hotio.dev/containers/${upstream_image_base}-tags.json\") && commit_sha=$(jq -r --arg tag \"${upstream_tag}\" '.[$tag].commit_sha' <<< \"${tags_json}\") && upstream_tag_sha=${upstream_tag}-${commit_sha:0:7} && echo \"${upstream_tag_sha}\"",
-  "version": "3c922ee0875910dca8810114e9aa8d6a8b60973e",
+  "version": "fee562d57f6f4e16e07ed882a8cb0f14e7fa2b23",
   "version__command": "curl -fsSL ${GITHUB_TOKEN:+--header \"Authorization: Bearer ${GITHUB_TOKEN}\"} \"https://api.github.com/repos/sabnzbd/sabnzbd/commits/develop\" | jq -re '.sha'",
   "version_par2turbo": "1.4.0",
   "version_par2turbo__command": "curl -fsSL ${GITHUB_TOKEN:+--header \"Authorization: Bearer ${GITHUB_TOKEN}\"} \"https://api.github.com/repos/animetosho/par2cmdline-turbo/releases/latest\" | jq -re '.tag_name' | sed -E 's/^v//'"
